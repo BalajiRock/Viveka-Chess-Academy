@@ -1,0 +1,41 @@
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    /* height: 100vh; */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black overlay */
+    z-index: 1;
+  }
+  
+  .content {
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #ffffff;
+  }
+  

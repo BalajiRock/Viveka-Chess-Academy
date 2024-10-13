@@ -1,0 +1,89 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.form-section {
+    width: 55%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    width: 35%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the form inputs and buttons */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #008612;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #004607;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;  /* Stacks form and contact info vertically */
+    }
+
+    .form-section,
+    .contact-info {
+        width: 95%;  /* Make both sections full-width on mobile */
+        padding: 10px; /*   Reduce padding for smaller screens */
+    }
+
+    .form-section {
+        margin-bottom: 20px;  /* Add space between sections */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjust styles for very small screens */
+    .form-group input,
+    .form-group textarea {
+        width: 93%;
+        font-size: 14px;  /* Reduce font size slightly */
+        padding: 8px;  /* Adjust padding for smaller screens */
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
