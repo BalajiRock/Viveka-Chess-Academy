@@ -25,14 +25,26 @@ const Contact = () => {
           publicKey: 'cmhubp7G-mmUboubU',
         })
         .then(
-          () => {
-            console.log('SUCCESS!');
-          },
-          (error) => {
-            console.log('FAILED...', error);
-          },
+            () => {
+                console.log('SUCCESS!');
+                // Show a success message pop-up
+                alert('Form submitted successfully!');
+                
+                // Clear the form data
+                setFormData({
+                    user_name: '',
+                    email: '',
+                    Phone_no: '',
+                    message: ''
+                });
+            },
+            (error) => {
+                console.log('FAILED...', error);
+                // Optionally, you can show an error message
+                alert('Submission failed. Please try again.');
+            }
         );
-        console.log(formData);
+
     };
 
     return (
