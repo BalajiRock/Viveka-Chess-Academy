@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import logo from "../Assets/logo.png"
 import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
 
@@ -11,6 +11,9 @@ export const Navbar = () => {
   }
   return (
     <nav>
+      <Link to="/" className="logo-link">
+      <img src={logo} alt="Logo" className="logo"  />
+      </Link>
       <Link to="/" className="title">
         Viveka Chess Academy
       </Link>

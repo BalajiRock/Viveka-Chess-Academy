@@ -16,7 +16,7 @@ const About = () => {
         <div className="section-content">
           <img src={visionImage} alt="Vision" className="vision-mission-image" />
           <ul>
-            <li>To nurture strategic thinking and problem-solving skills through the art of chess, empowering individuals of all ages to excel in both the game and in life.</li>
+            <li>To nurture strategic thinking and problem-solving skills through the art of chess, empowering young talents to excel in both the game and in life.</li>
             <li>To provide high-quality chess education by offering personalized training programs, fostering a love for the game, and promoting cognitive development.</li>
             <li>To create a supportive community where learners can thrive, collaborate, and challenge themselves to achieve mastery in chess.</li>
           </ul>
@@ -29,7 +29,7 @@ const About = () => {
           <img src={missionImage} alt="Mission" className="vision-mission-image" />
           <ul>
             <li>To become a leading platform for chess education globally, recognized for innovation, excellence, and producing future chess champions.</li>
-            <li>To promote chess as a tool for intellectual growth, enhancing critical thinking, focus, and decision-making in individuals across diverse age groups and backgrounds.</li>
+            <li>To promote chess as a tool for intellectual growth, enhancing critical thinking, focus, and decision-making in individuals across diverse race and backgrounds.</li>
             <li>To inspire a global chess community, where the game is celebrated as both a sport and an educational tool, encouraging lifelong learning and curiosity.</li>
           </ul>
         </div>
