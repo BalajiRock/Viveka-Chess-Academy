@@ -38,6 +38,9 @@
   .footer-info p {
     margin: 5px 0;
   }
+  .footer-info p a{
+    color: #87ff97;
+  }
   
   .footer-social {
     display: flex;

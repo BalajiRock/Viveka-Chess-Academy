@@ -6,6 +6,8 @@ import emailjs from '@emailjs/browser';
 const Contact = () => {
     const [formData, setFormData] = useState({
         user_name: '',
+        student_name:'',
+        DOB:'',
         email: '',
         Phone_no: '',
         message: ''
@@ -20,6 +22,7 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        formData["DOB"] = new Date (formData["DOB"]).toDateString();
         emailjs
         .send('service_70s455y', 'template_hvxz3vi', formData, {
           publicKey: 'cmhubp7G-mmUboubU',
@@ -33,6 +36,8 @@ const Contact = () => {
                 // Clear the form data
                 setFormData({
                     user_name: '',
+                    student_name:'',
+                    DOB:'',
                     email: '',
                     Phone_no: '',
                     message: ''
@@ -44,6 +49,7 @@ const Contact = () => {
                 alert('Submission failed. Please try again.');
             }
         );
+        console.log(formData);
 
     };
 
@@ -55,11 +61,33 @@ const Contact = () => {
                 <p>Aspiring students can contact us here with your full details.</p>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
-                        <label>Name *</label>
+                        <label>Your Name *</label>
                         <input
                             type="text"
                             id="user_name"
                             name="user_name"
+                            value={formData.name}
+                            onChange={handleChange}
+                            required
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label>Student's Name *</label>
+                        <input
+                            type="text"
+                            id="student_name"
+                            name="student_name"
+                            value={formData.name}
+                            onChange={handleChange}
+                            required
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label>Date of Birth*</label>
+                        <input
+                            type="date"
+                            id="DOB"
+                            name="DOB"
                             value={formData.name}
                             onChange={handleChange}
                             required
