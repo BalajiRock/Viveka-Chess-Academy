@@ -9,7 +9,7 @@ const Home = () => {
       <div className="content">
         <h1>Welcome to Viveka Chess Academy – "Mastering Minds"</h1>
         <p>
-        At Viveka Chess Academy, we are dedicated to shaping young minds through the art of chess. Our mission is to provide exceptional in-person chess coaching, offering world-class training that is both accessible and affordable. Whether you're a beginner or looking to elevate your advanced skills, our well-structured programs cater to players of all levels.
+        At Viveka Chess Academy, we are dedicated to shaping young minds through the art of chess. Our mission is to provide exceptional in-person chess coaching, offering chess training that is both accessible and affordable. Whether you're a beginner or looking to elevate your advanced skills, our well-structured programs cater to players of all levels.
         </p>
       </div>
     </div>
